@@ -1,6 +1,6 @@
 const array = [1, 2, 3];
 
-forEach(array, function (item, index, arr) {
+forEach(array, function (item, index, array) {
   console.log(item, index);
 })
 // 1 0
@@ -14,7 +14,7 @@ const mapResult = map(array, function (item, index, array) {
 console.log(mapResult) // => [4, 8, 12]
 
 const filterResult = filter(array, (item, index, array) => {
-  return item > 1;
+  return item > 1 ;
 });
 
 console.log(filterResult); // => [2, 3]
@@ -38,6 +38,6 @@ const everyResult = every(array, (item, index, array) => {
   return item > 2;
 });
 
-console.log(someResult); // => false
+console.log(everyResult); // => false
 
 
